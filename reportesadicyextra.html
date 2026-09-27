@@ -92,7 +92,7 @@
     <header class="header">
         <div class="header-left">
             <button class="menu-btn" id="toggle-menu"><i data-lucide="menu"></i></button>
-            ""
+            ''
             <h1 class="header-title">Reportes Adicionales y Extraordinarios</h1>
         </div>
         <div class="header-right">
@@ -213,7 +213,7 @@
                 snapshot.forEach(doc => {
                     todasSolicitudes.push({ id_doc: doc.id, ...doc.data() });
                 });
-                todasSolicitudes.sort((a, b) => (b.fecha_creacion || "").localeCompare(a.fecha_creacion || ""));
+                todasSolicitudes.sort((a, b) => (b.fecha_creacion || '').localeCompare(a.fecha_creacion || ''));
                 actualizarBadges();
                 renderTabla();
             }, error => {
