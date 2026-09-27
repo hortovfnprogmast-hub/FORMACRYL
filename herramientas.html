@@ -159,7 +159,7 @@
     <header class="header">
         <div class="header-left">
             <button class="menu-btn" id="toggle-menu"><i data-lucide="menu"></i></button>
-            ""
+            ''
             <h1 class="header-title">Almacén</h1>
         </div>
         <div class="header-right">
@@ -417,7 +417,7 @@
         const fBuscar = document.getElementById('filtro-buscar').value.toLowerCase();
 
         let filtrados = dataInventario.filter(t => {
-            if(fBuscar && !(t.nombre || "").toLowerCase().includes(fBuscar) && !(t.clave || "").toLowerCase().includes(fBuscar)) return false;
+            if(fBuscar && !(t.nombre || '').toLowerCase().includes(fBuscar) && !(t.clave || '').toLowerCase().includes(fBuscar)) return false;
             return true;
         });
 
