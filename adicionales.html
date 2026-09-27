@@ -242,7 +242,7 @@
                 </div>
 
                 <form id="formAdicionales" style="display: block;">
-                    <input type="hidden" id="doc_id_actual" value="">
+                    <input type="hidden" id="doc_id_actual" value=''>
                     
                     <div class="form-card" style="border-left: 4px solid var(--primary-blue);">
                         <h3 class="section-title-form"><i data-lucide="file-question"></i> Tipo de solicitud</h3>
@@ -471,7 +471,7 @@
             db.collection("solicitudes_adicionales").where("residente_id","==",appData.usuario).get().then(q => {
                 misSolicitudes = [];
                 q.forEach(d => { misSolicitudes.push({ id_doc: d.id, ...d.data() }); });
-                misSolicitudes.sort((a, b) => (b.fecha_creacion || "").localeCompare(a.fecha_creacion || ""));
+                misSolicitudes.sort((a, b) => (b.fecha_creacion || '').localeCompare(a.fecha_creacion || ''));
                 actualizarBadges();
                 if(tabActual !== 'Nueva solicitud') renderTablaMisSolicitudes();
             }).catch(e => console.error(e.message));
