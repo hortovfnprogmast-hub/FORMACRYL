@@ -79,7 +79,6 @@
     <header class="header">
         <div class="header-left">
             <button class="menu-btn" id="toggle-menu"><i data-lucide="menu"></i></button>
-            ""
             <h1 class="header-title">Biométricos</h1>
         </div>
         <div class="header-right">
@@ -155,7 +154,6 @@
     <button id="btn-descargar-pdf" class="fab-download" onclick="generarPDF()"><i data-lucide="file-down"></i> Descargar Biométrico</button>
 
     <script>
-        // Configuración de Firebase actualizada
         const firebaseConfig = {
             apiKey: "AIzaSyBjlemFwGQbA3mM7UhOZAVGaam1z1Xixr8",
             authDomain: "loretoapp-2ca14.firebaseapp.com",
@@ -226,7 +224,7 @@
 
         async function cargarAsistencias() {
             if(!idUsuario) {
-                document.getElementById('loader').innerHTML = '<p style="color:var(--danger);">No se识别ó al usuario. Inicia sesión.</p>';
+                document.getElementById('loader').innerHTML = '<p style="color:var(--danger);">No se pudo identificar al usuario. Inicia sesión.</p>';
                 return;
             }
             try {
@@ -313,7 +311,6 @@
             const crearHoja = (titulo, tbodyId) => `
                 <div style="padding: 20px 30px; background: white; font-family: 'Inter', sans-serif;">
                     <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #F0882D; padding-bottom: 10px; margin-bottom: 15px;">
-                        ""
                         <div style="text-align: center; color: #F0882D;">
                             <h2 style="margin: 0; font-size: 18px; font-weight: 800; text-transform: uppercase;">BIOMÉTRICO</h2>
                             <h3 style="margin: 3px 0 0 0; font-size: 14px; color: #1e293b; font-weight: 700;">${nombreUsuario}</h3>
