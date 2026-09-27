@@ -14,7 +14,7 @@
 
     <style>
         :root {
-            --primary-blue: #263fa4; --light-blue: #eef2ff; --bg-color: #f8fafc;
+            --primary-blue: #F0882D; --light-blue: #eef2ff; --bg-color: #f8fafc;
             --text-main: #1e293b; --text-muted: #64748b; --border-color: #e2e8f0;
             --danger: #dc2626; --success: #10b981; --warning: #f59e0b;
         }
@@ -74,7 +74,7 @@
         .form-group { margin-bottom: 16px; }
         .form-label { display: block; font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 6px; }
         .form-input, .form-select, textarea.form-input { width: 100%; padding: 14px 16px; background-color: var(--bg-color); border: 1px solid var(--border-color); border-radius: 8px; font-size: 14px; color: var(--text-main); box-sizing: border-box; font-family: inherit; outline: none; transition: all 0.2s ease; }
-        .form-input:focus, .form-select:focus, textarea.form-input:focus { background-color: #FFFFFF; border-color: var(--primary-blue); box-shadow: 0 0 0 3px rgba(38, 63, 164, 0.1); }
+        .form-input:focus, .form-select:focus, textarea.form-input:focus { background-color: #FFFFFF; border-color: var(--primary-blue); box-shadow: 0 0 0 3px rgba(240, 136, 45, 0.1); }
         .form-input[readonly] { background-color: #f1f5f9; color: var(--text-muted); cursor: not-allowed; }
         
         .info-grid { display: grid; grid-template-columns: 1fr; gap: 12px; background: var(--light-blue); padding: 16px; border-radius: 8px; border: 1px solid #c7d2fe; margin-top: 10px; }
@@ -642,7 +642,7 @@
             canvasFirma = document.getElementById('firma_tecnico'); if(!canvasFirma) return;
             ctxFirma = canvasFirma.getContext('2d');
             canvasFirma.width = 600; canvasFirma.height = 200;
-            ctxFirma.lineWidth = 3; ctxFirma.lineCap = 'round'; ctxFirma.strokeStyle = '#263fa4';
+            ctxFirma.lineWidth = 3; ctxFirma.lineCap = 'round'; ctxFirma.strokeStyle = '#F0882D';
             let d = false;
             function g(e) {
                 const r = canvasFirma.getBoundingClientRect();
