@@ -94,7 +94,7 @@
     <header class="header">
         <div class="header-left">
             <button class="menu-btn" id="toggle-menu"><i data-lucide="menu"></i></button>
-            ""
+            ''
             <h1 class="header-title">Control de Nómina</h1>
         </div>
         <div class="header-right">
@@ -258,7 +258,7 @@
         const fBuscar = document.getElementById('filtro-buscar').value.toLowerCase();
 
         let filtrados = dataGlobal.filter(t => {
-            if(fBuscar && !(t.nombre || "").toLowerCase().includes(fBuscar)) return false;
+            if(fBuscar && !(t.nombre || '').toLowerCase().includes(fBuscar)) return false;
             return true;
         });
 
