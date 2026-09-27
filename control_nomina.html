@@ -99,7 +99,7 @@
         </div>
         <div class="header-right">
             <div class="user-initial" id="user-initial">C</div>
-            <img src="https://i.ibb.co/8Lk54Gkb/LOGOTIPO-1.jpg" alt="User" height="35" style="border-radius:4px;">
+            <img src="https://i.ibb.co/XZZzQL2t/LOGOTIPO.png" alt="User" height="35" style="border-radius:4px;">
         </div>
     </header>
 
@@ -226,7 +226,7 @@
             expSnap.forEach(doc => {
                 const d = doc.data();
                 const nombreCompleto = `${d.nombre || ''} ${d.paterno || ''} ${d.materno || ''}`.trim().toUpperCase();
-                let foto = (d.urls_fotos && d.urls_fotos.selfie) ? d.urls_fotos.selfie : 'https://i.ibb.co/8Lk54Gkb/LOGOTIPO-1.jpg';
+                let foto = (d.urls_fotos && d.urls_fotos.selfie) ? d.urls_fotos.selfie : 'https://i.ibb.co/XZZzQL2t/LOGOTIPO.png';
                 let clabe = d.cuenta_clabe || 'Sin registrar';
                 let cargo = d.cargo || d.puesto || 'Trabajador';
                 
