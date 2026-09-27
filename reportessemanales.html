@@ -92,7 +92,7 @@
     <header class="header">
         <div class="header-left">
             <button class="menu-btn" id="toggle-menu"><i data-lucide="menu"></i></button>
-            ""
+            ''
             <h1 class="header-title">Todos los Reportes Semanales</h1>
         </div>
         <div class="header-right">
@@ -212,7 +212,7 @@
                 snapshot.forEach(doc => {
                     todosReportes.push({ id_doc: doc.id, ...doc.data() });
                 });
-                todosReportes.sort((a, b) => (b.fecha_hora_completa || "").localeCompare(a.fecha_hora_completa || ""));
+                todosReportes.sort((a, b) => (b.fecha_hora_completa || '').localeCompare(a.fecha_hora_completa || ''));
                 actualizarBadges();
                 renderTabla();
             }, error => {
